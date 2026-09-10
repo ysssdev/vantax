@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { MessageSquare, ArrowDown, ShieldCheck, Zap, Globe, Sparkles, TrendingUp, CheckCircle2 } from 'lucide-react';
+import { MessageSquare, ArrowDown, ShieldCheck, Zap, Globe, Sparkles, TrendingUp, CheckCircle2, Monitor } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
 import { TikTokIcon, TikTokBadge } from './TikTokLogo';
 
@@ -73,14 +73,23 @@ export const Hero: React.FC = () => {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-5 mb-10">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-10">
               <a
                 id="hero-btn-ver-ativos"
                 href="#ativos"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-sm text-slate-200 bg-white/[0.06] hover:bg-white/[0.1] hover:text-white border border-white/[0.12] hover:border-cyan-500/40 transition-all duration-200 shadow-sm"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-200 bg-white/[0.06] hover:bg-white/[0.1] hover:text-white border border-white/[0.12] hover:border-cyan-500/40 transition-all duration-200 shadow-sm"
               >
                 <span>VER ATIVOS</span>
                 <ArrowDown className="w-4 h-4 text-cyan-400" />
+              </a>
+
+              <a
+                id="hero-btn-ver-telas"
+                href="#telas"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-cyan-300 bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 transition-all duration-200 shadow-[0_0_15px_rgba(6,182,212,0.15)]"
+              >
+                <Monitor className="w-4 h-4 text-cyan-400" />
+                <span>TELAS CLONADAS</span>
               </a>
 
               <a
@@ -88,10 +97,10 @@ export const Hero: React.FC = () => {
                 href={SITE_CONFIG.discordUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-400 hover:via-blue-500 hover:to-purple-500 transition-all duration-300 shadow-[0_0_25px_rgba(6,182,212,0.35)] hover:shadow-[0_0_35px_rgba(6,182,212,0.5)] transform hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-400 hover:via-blue-500 hover:to-purple-500 transition-all duration-300 shadow-[0_0_25px_rgba(6,182,212,0.35)] hover:shadow-[0_0_35px_rgba(6,182,212,0.5)] transform hover:-translate-y-0.5"
               >
                 <MessageSquare className="w-4 h-4 text-white" />
-                <span>COMPRAR PELO DISCORD</span>
+                <span>COMPRAR NO DISCORD</span>
               </a>
             </div>
 
@@ -103,11 +112,11 @@ export const Hero: React.FC = () => {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>7 Opções Prontas para Operar</span>
+                <span>Ativos & Telas Clonadas</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-purple-400" />
-                <span>Atendimento Centralizado no Discord</span>
+                <span>Orçamentos no Discord</span>
               </div>
             </div>
           </motion.div>
@@ -189,6 +198,17 @@ export const Hero: React.FC = () => {
                     <span className="text-slate-300 font-medium">Capacidade BCs</span>
                   </div>
                   <span className="text-slate-200 font-semibold">Até 30 Contas / BC</span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 rounded-lg bg-black/40 border border-white/[0.04] text-xs">
+                  <div className="flex items-center gap-2.5">
+                    <Monitor className="w-3.5 h-3.5 text-cyan-400" />
+                    <span className="text-slate-300 font-medium">Telas & Sites Clonados</span>
+                  </div>
+                  <span className="text-emerald-400 font-semibold flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    Orçamento Aberto
+                  </span>
                 </div>
               </div>
 

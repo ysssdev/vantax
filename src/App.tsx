@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AssetsSection } from './components/AssetsSection';
+import { TelasSection } from './components/TelasSection';
 import { HowItWorks } from './components/HowItWorks';
 import { Differentials } from './components/Differentials';
 import { FinalCTA } from './components/FinalCTA';
@@ -27,6 +28,9 @@ export default function App() {
 
         {/* Section: Escolha seu ativo (The 7 requested options) */}
         <AssetsSection />
+
+        {/* Section: Telas & Sites Clonados (Orçamento no Discord) */}
+        <TelasSection />
 
         {/* Section: Como Funciona (3 steps) */}
         <HowItWorks />

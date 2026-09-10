@@ -36,13 +36,20 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
                 </span>
               </div>
               <span className="text-xs text-slate-400 block">
-                Ativos TikTok para Escala e Contingência de Alta Performance
+                Ativos TikTok & Telas Clonadas para Escala e Contingência de Alta Performance
               </span>
             </div>
           </div>
 
           {/* Discord and Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
+            <a
+              href="#telas"
+              className="hover:text-white transition-colors"
+            >
+              Telas Clonadas
+            </a>
+
             <a
               id="footer-discord-link"
               href={SITE_CONFIG.discordUrl}

@@ -1,6 +1,6 @@
 {
   "name": "VantaX",
-  "description": "VantaX — Landing page premium para venda de ativos e contas TikTok prontas para escalar com atendimento exclusivo via Discord.",
+  "description": "VantaX — Landing page premium para venda de ativos TikTok e telas clonadas de alta conversão prontas para escalar com orçamento via Discord.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
