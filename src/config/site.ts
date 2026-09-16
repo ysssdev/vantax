@@ -9,7 +9,7 @@ export const SITE_CONFIG = {
   tagline: "Ativos TikTok Prontos para Escalar",
   
   // Link central do Discord da empresa (utilizado por todos os botões da página)
-  discordUrl: "https://discord.gg/uQ9hkt7y",
+  discordUrl: "https://discord.gg/XsftfwnE",
   
   logoUrl: "/vantax-logo.jpg",
   supportHours: "Segunda a Domingo • Atendimento Prioritário",
