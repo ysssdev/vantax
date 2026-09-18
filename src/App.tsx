@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AssetsSection } from './components/AssetsSection';
+import { PostFlashSection } from './components/PostFlashSection';
 import { TelasSection } from './components/TelasSection';
 import { HowItWorks } from './components/HowItWorks';
 import { Differentials } from './components/Differentials';
@@ -28,6 +29,9 @@ export default function App() {
 
         {/* Section: Escolha seu ativo (The 7 requested options) */}
         <AssetsSection />
+
+        {/* Section: PostFlash (3 Planos de Automação de Postagens) */}
+        <PostFlashSection />
 
         {/* Section: Telas & Sites Clonados (Orçamento no Discord) */}
         <TelasSection />

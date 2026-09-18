@@ -73,22 +73,31 @@ export const Hero: React.FC = () => {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2.5 sm:gap-3 mb-10 flex-wrap">
               <a
                 id="hero-btn-ver-ativos"
                 href="#ativos"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-200 bg-white/[0.06] hover:bg-white/[0.1] hover:text-white border border-white/[0.12] hover:border-cyan-500/40 transition-all duration-200 shadow-sm"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm text-slate-200 bg-white/[0.06] hover:bg-white/[0.1] hover:text-white border border-white/[0.12] hover:border-cyan-500/40 transition-all duration-200 shadow-sm"
               >
                 <span>VER ATIVOS</span>
                 <ArrowDown className="w-4 h-4 text-cyan-400" />
               </a>
 
               <a
+                id="hero-btn-ver-postflash"
+                href="#postflash"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm text-cyan-300 bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-500/40 transition-all duration-200 shadow-[0_0_15px_rgba(6,182,212,0.2)]"
+              >
+                <Zap className="w-4 h-4 text-cyan-400" />
+                <span>POSTFLASH (TIKTOK & INSTA)</span>
+              </a>
+
+              <a
                 id="hero-btn-ver-telas"
                 href="#telas"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-cyan-300 bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 transition-all duration-200 shadow-[0_0_15px_rgba(6,182,212,0.15)]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm text-slate-300 bg-white/[0.04] hover:bg-white/[0.08] hover:text-white border border-white/[0.1] transition-all duration-200"
               >
-                <Monitor className="w-4 h-4 text-cyan-400" />
+                <Monitor className="w-4 h-4 text-purple-400" />
                 <span>TELAS CLONADAS</span>
               </a>
 
@@ -97,7 +106,7 @@ export const Hero: React.FC = () => {
                 href={SITE_CONFIG.discordUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-400 hover:via-blue-500 hover:to-purple-500 transition-all duration-300 shadow-[0_0_25px_rgba(6,182,212,0.35)] hover:shadow-[0_0_35px_rgba(6,182,212,0.5)] transform hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-xs sm:text-sm text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-400 hover:via-blue-500 hover:to-purple-500 transition-all duration-300 shadow-[0_0_25px_rgba(6,182,212,0.35)] hover:shadow-[0_0_35px_rgba(6,182,212,0.5)] transform hover:-translate-y-0.5"
               >
                 <MessageSquare className="w-4 h-4 text-white" />
                 <span>COMPRAR NO DISCORD</span>
@@ -108,7 +117,11 @@ export const Hero: React.FC = () => {
             <div className="pt-6 border-t border-white/[0.06] flex flex-wrap items-center justify-center lg:justify-start gap-y-3 gap-x-6 text-xs text-slate-400 font-medium">
               <div className="flex items-center gap-2">
                 <TikTokIcon className="w-3.5 h-3.5" glow={false} />
-                <span>Especialistas em TikTok Ads</span>
+                <span>Especialistas em TikTok</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+                <span>PostFlash Automação</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
@@ -116,7 +129,7 @@ export const Hero: React.FC = () => {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-purple-400" />
-                <span>Orçamentos no Discord</span>
+                <span>Compra no Discord</span>
               </div>
             </div>
           </motion.div>
@@ -202,7 +215,15 @@ export const Hero: React.FC = () => {
 
                 <div className="flex items-center justify-between p-2.5 rounded-lg bg-black/40 border border-white/[0.04] text-xs">
                   <div className="flex items-center gap-2.5">
-                    <Monitor className="w-3.5 h-3.5 text-cyan-400" />
+                    <Zap className="w-3.5 h-3.5 text-cyan-400" />
+                    <span className="text-slate-300 font-medium">PostFlash (TikTok & Insta)</span>
+                  </div>
+                  <span className="text-cyan-300 font-semibold">3 Planos Disponíveis</span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 rounded-lg bg-black/40 border border-white/[0.04] text-xs">
+                  <div className="flex items-center gap-2.5">
+                    <Monitor className="w-3.5 h-3.5 text-purple-400" />
                     <span className="text-slate-300 font-medium">Telas & Sites Clonados</span>
                   </div>
                   <span className="text-emerald-400 font-semibold flex items-center gap-1">

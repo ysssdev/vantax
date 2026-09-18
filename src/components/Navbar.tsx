@@ -22,6 +22,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
   const navLinks = [
     { label: 'Início', href: '#inicio' },
     { label: 'Escolha seu Ativo', href: '#ativos' },
+    { label: 'PostFlash', href: '#postflash' },
     { label: 'Telas Clonadas', href: '#telas' },
     { label: 'Como Funciona', href: '#como-funciona' },
     { label: 'Diferenciais', href: '#diferenciais' },
