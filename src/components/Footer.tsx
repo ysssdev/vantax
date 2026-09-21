@@ -36,7 +36,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
                 </span>
               </div>
               <span className="text-xs text-slate-400 block">
-                Ativos TikTok, PostFlash & Telas Clonadas para Escala de Alta Performance
+                Ativos TikTok, PostFlash, KL & Telas Clonadas para Escala de Alta Performance
               </span>
             </div>
           </div>
@@ -48,6 +48,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
               className="hover:text-white transition-colors"
             >
               PostFlash
+            </a>
+
+            <a
+              href="#kl"
+              className="hover:text-white transition-colors"
+            >
+              KL
             </a>
 
             <a

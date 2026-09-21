@@ -1,6 +1,6 @@
 {
   "name": "VantaX",
-  "description": "VantaX — Landing page premium para ativos TikTok, PostFlash automação para TikTok e Instagram, e telas clonadas com compra no Discord.",
+  "description": "VantaX — Landing page premium para ativos TikTok, PostFlash automação, catálogo KL (BTMOB e KRAKEN) e telas clonadas com compra no Discord.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

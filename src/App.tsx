@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AssetsSection } from './components/AssetsSection';
 import { PostFlashSection } from './components/PostFlashSection';
+import { KLSection } from './components/KLSection';
 import { TelasSection } from './components/TelasSection';
 import { HowItWorks } from './components/HowItWorks';
 import { Differentials } from './components/Differentials';
@@ -32,6 +33,9 @@ export default function App() {
 
         {/* Section: PostFlash (3 Planos de Automação de Postagens) */}
         <PostFlashSection />
+
+        {/* Section: KL (2 Opções: BTMOB e KRAKEN) */}
+        <KLSection />
 
         {/* Section: Telas & Sites Clonados (Orçamento no Discord) */}
         <TelasSection />

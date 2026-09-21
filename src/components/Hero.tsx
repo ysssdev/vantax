@@ -89,7 +89,16 @@ export const Hero: React.FC = () => {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm text-cyan-300 bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-500/40 transition-all duration-200 shadow-[0_0_15px_rgba(6,182,212,0.2)]"
               >
                 <Zap className="w-4 h-4 text-cyan-400" />
-                <span>POSTFLASH (TIKTOK & INSTA)</span>
+                <span>POSTFLASH</span>
+              </a>
+
+              <a
+                id="hero-btn-ver-kl"
+                href="#kl"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm text-purple-300 bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/40 transition-all duration-200 shadow-[0_0_15px_rgba(168,85,247,0.2)]"
+              >
+                <ShieldCheck className="w-4 h-4 text-purple-400" />
+                <span>KL</span>
               </a>
 
               <a
@@ -219,6 +228,14 @@ export const Hero: React.FC = () => {
                     <span className="text-slate-300 font-medium">PostFlash (TikTok & Insta)</span>
                   </div>
                   <span className="text-cyan-300 font-semibold">3 Planos Disponíveis</span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 rounded-lg bg-black/40 border border-white/[0.04] text-xs">
+                  <div className="flex items-center gap-2.5">
+                    <ShieldCheck className="w-3.5 h-3.5 text-pink-400" />
+                    <span className="text-slate-300 font-medium">KL</span>
+                  </div>
+                  <span className="text-pink-300 font-semibold">BTMOB & KRAKEN</span>
                 </div>
 
                 <div className="flex items-center justify-between p-2.5 rounded-lg bg-black/40 border border-white/[0.04] text-xs">
