@@ -21,10 +21,9 @@ export const Navbar: React.FC<NavbarProps> = () => {
 
   const navLinks = [
     { label: 'Início', href: '#inicio' },
-    { label: 'Escolha seu Ativo', href: '#ativos' },
+    { label: 'Soluções da Agência', href: '#servicos' },
+    { label: 'Ativos & Contingência', href: '#ativos' },
     { label: 'PostFlash', href: '#postflash' },
-    { label: 'KL', href: '#kl' },
-    { label: 'Telas Clonadas', href: '#telas' },
     { label: 'Como Funciona', href: '#como-funciona' },
     { label: 'Diferenciais', href: '#diferenciais' },
   ];
@@ -62,11 +61,11 @@ export const Navbar: React.FC<NavbarProps> = () => {
               </span>
               <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/25 text-[10px] font-bold text-cyan-400 tracking-wider uppercase">
                 <TikTokIcon className="w-2.5 h-2.5" glow={false} />
-                <span>Ativos</span>
+                <span>Agência TikTok</span>
               </span>
             </div>
             <span className="text-[11px] text-slate-400 tracking-wide font-medium flex items-center gap-1">
-              <span>Contas & Business Centers</span>
+              <span>Escala, Ativos & PostFlash</span>
             </span>
           </div>
         </a>
@@ -94,7 +93,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
             className="group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-cyan-500/20 via-blue-600/30 to-purple-600/20 hover:from-cyan-500/35 hover:via-blue-600/45 hover:to-purple-600/35 border border-cyan-500/40 hover:border-cyan-400/90 transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.18)] hover:shadow-[0_0_28px_rgba(6,182,212,0.35)]"
           >
             <MessageSquare className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform duration-200" />
-            <span>Entrar no Discord</span>
+            <span>Falar com a Agência</span>
             <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-cyan-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
           </a>
         </div>

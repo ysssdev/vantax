@@ -24,13 +24,13 @@ export const AssetsSection: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/25 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-4 shadow-[0_0_15px_rgba(6,182,212,0.12)]">
             <TikTokIcon className="w-3.5 h-3.5" />
-            <span>Catálogo Oficial TikTok Ads • VantaX</span>
+            <span>Infraestrutura da Agência • Ativos Oficiais</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-            Escolha seu ativo
+            Ativos & Contingência Blindada
           </h2>
           <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
-            Opções selecionadas para contingência, tráfego internacional e escala no TikTok Ads.
+            Contas restabelecidas e Business Centers internacionais validados pela agência para você rodar no TikTok Ads sem bloqueios e sem interrupções.
           </p>
 
           {/* Quick Filter Tabs */}
@@ -82,8 +82,8 @@ export const AssetsSection: React.FC = () => {
 
         {/* Informative Sub-banner */}
         <div className="mt-12 p-4 rounded-xl bg-white/[0.02] border border-white/[0.06] text-center max-w-2xl mx-auto">
-          <p className="text-xs text-slate-400">
-            Precisa de um ativo personalizado ou quantidade específica? Entre em contato diretamente no nosso Discord para pacotes sob demanda.
+          <p className="text-xs text-slate-300">
+            Precisa de um lote de grande volume ou esteira contínua de contingência para sua operação? Fale diretamente com nossos consultores da agência no Discord.
           </p>
         </div>
 

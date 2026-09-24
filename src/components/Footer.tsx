@@ -32,11 +32,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
                 </span>
                 <span className="inline-flex items-center gap-1 text-[10px] text-cyan-400 bg-cyan-500/10 px-1.5 py-0.5 rounded border border-cyan-500/20">
                   <TikTokIcon className="w-2.5 h-2.5" glow={false} />
-                  TikTok Assets
+                  Agência TikTok
                 </span>
               </div>
               <span className="text-xs text-slate-400 block">
-                Ativos TikTok, PostFlash, KL & Telas Clonadas para Escala de Alta Performance
+                Agência especializada em TikTok Ads, ativos, contingência e automação PostFlash
               </span>
             </div>
           </div>
@@ -44,24 +44,24 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
           {/* Discord and Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
             <a
+              href="#servicos"
+              className="hover:text-white transition-colors"
+            >
+              Soluções
+            </a>
+
+            <a
+              href="#ativos"
+              className="hover:text-white transition-colors"
+            >
+              Ativos
+            </a>
+
+            <a
               href="#postflash"
               className="hover:text-white transition-colors"
             >
               PostFlash
-            </a>
-
-            <a
-              href="#kl"
-              className="hover:text-white transition-colors"
-            >
-              KL
-            </a>
-
-            <a
-              href="#telas"
-              className="hover:text-white transition-colors"
-            >
-              Telas Clonadas
             </a>
 
             <a
@@ -97,7 +97,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
         {/* Bottom copyright line */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>
-            © {currentYear} {SITE_CONFIG.brandName} — Ativos TikTok. Todos os direitos reservados.
+            © {currentYear} {SITE_CONFIG.brandName} — Agência TikTok. Todos os direitos reservados.
           </p>
           <p className="text-slate-400">
             Link oficial do Discord: {SITE_CONFIG.discordUrl}

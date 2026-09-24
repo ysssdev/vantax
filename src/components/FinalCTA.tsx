@@ -24,15 +24,15 @@ export const FinalCTA: React.FC = () => {
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/25 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-6 shadow-[0_0_15px_rgba(6,182,212,0.15)]">
             <TikTokIcon className="w-3.5 h-3.5" />
-            <span>VantaX • Atendimento Ativo no Discord</span>
+            <span>VantaX • Agência Especializada em TikTok</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-            Pronto para escolher seu ativo?
+            Pronto para escalar sua operação no TikTok?
           </h2>
 
           <p className="text-base sm:text-lg text-slate-300 max-w-xl mx-auto mb-10 font-normal leading-relaxed">
-            Entre no nosso Discord e fale com a equipe VantaX para liberação imediata da sua conta TikTok Ads.
+            Entre no nosso Discord e fale diretamente com o time de especialistas da VantaX para liberar seus ativos, ativar o PostFlash ou acelerar suas campanhas.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -44,7 +44,7 @@ export const FinalCTA: React.FC = () => {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold text-base text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-400 hover:via-blue-500 hover:to-purple-500 transition-all duration-300 shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:shadow-[0_0_40px_rgba(6,182,212,0.6)] transform hover:-translate-y-0.5"
             >
               <MessageSquare className="w-5 h-5 text-white" />
-              <span>COMPRAR AGORA</span>
+              <span>FALAR COM A AGÊNCIA NO DISCORD</span>
               <ArrowUpRight className="w-4 h-4 text-slate-200" />
             </a>
           </div>

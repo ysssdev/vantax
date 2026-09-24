@@ -6,24 +6,24 @@ export const HowItWorks: React.FC = () => {
   const steps = [
     {
       number: "01",
-      title: "Escolha seu ativo",
-      description: "Selecione uma das opções disponíveis em nosso catálogo de contas e Business Centers.",
+      title: "Defina sua Necessidade",
+      description: "Escolha entre nossa infraestrutura de ativos (Contas e BCs), automação PostFlash (TikTok & Insta) ou assessoria de escala.",
       icon: <MousePointerClick className="w-6 h-6 text-cyan-400" />,
       accent: "from-cyan-500/20 to-blue-500/20",
       border: "border-cyan-500/30"
     },
     {
       number: "02",
-      title: "Entre no Discord",
-      description: "Clique em comprar e seja direcionado instantaneamente para nosso servidor no Discord.",
+      title: "Fale com a Agência no Discord",
+      description: "Clique no botão e seja direcionado instantaneamente para nosso servidor oficial no Discord com atendimento direto da equipe.",
       icon: <MessageSquare className="w-6 h-6 text-purple-400" />,
       accent: "from-purple-500/20 to-cyan-500/20",
       border: "border-purple-500/30"
     },
     {
       number: "03",
-      title: "Finalize seu pedido",
-      description: "Converse com nossa equipe de prontidão e finalize a compra diretamente pelo Discord com total suporte.",
+      title: "Ativação & Escala Imediata",
+      description: "Receba seus acessos, instruções de contingência e liberação imediata para rodar campanhas com máxima segurança.",
       icon: <CheckCircle className="w-6 h-6 text-emerald-400" />,
       accent: "from-emerald-500/20 to-teal-500/20",
       border: "border-emerald-500/30"
@@ -37,13 +37,13 @@ export const HowItWorks: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider mb-4">
-            Fluxo Simplificado
+            Fluxo da Agência
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Como Funciona
+            Como Funciona o Atendimento
           </h2>
           <p className="text-slate-400 text-base">
-            Processo ágil e transparente em apenas 3 etapas diretas.
+            Processo ágil, discreto e desburocratizado em 3 etapas simples pelo Discord.
           </p>
         </div>
 

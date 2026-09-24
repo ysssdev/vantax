@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { AgencyServicesSection } from './components/AgencyServicesSection';
 import { AssetsSection } from './components/AssetsSection';
 import { PostFlashSection } from './components/PostFlashSection';
-import { KLSection } from './components/KLSection';
-import { TelasSection } from './components/TelasSection';
 import { HowItWorks } from './components/HowItWorks';
 import { Differentials } from './components/Differentials';
 import { FinalCTA } from './components/FinalCTA';
@@ -28,17 +27,14 @@ export default function App() {
         {/* Hero Section */}
         <Hero />
 
-        {/* Section: Escolha seu ativo (The 7 requested options) */}
+        {/* Section: Soluções da Agência TikTok */}
+        <AgencyServicesSection />
+
+        {/* Section: Escolha seu ativo (Contas & Business Centers) */}
         <AssetsSection />
 
-        {/* Section: PostFlash (3 Planos de Automação de Postagens) */}
+        {/* Section: PostFlash (3 Planos de Automação de Postagens TikTok & Instagram) */}
         <PostFlashSection />
-
-        {/* Section: KL (2 Opções: BTMOB e KRAKEN) */}
-        <KLSection />
-
-        {/* Section: Telas & Sites Clonados (Orçamento no Discord) */}
-        <TelasSection />
 
         {/* Section: Como Funciona (3 steps) */}
         <HowItWorks />
@@ -54,7 +50,7 @@ export default function App() {
       <Footer onOpenLegal={(type) => setLegalModal(type)} />
 
       {/* Floating Discord Quick-Action Button */}
-      <aside aria-label="Atendimento rápido" className="fixed bottom-6 right-6 z-40">
+      <aside aria-label="Atendimento rápido da agência" className="fixed bottom-6 right-6 z-40">
         <a
           id="floating-discord-btn"
           href={SITE_CONFIG.discordUrl}
