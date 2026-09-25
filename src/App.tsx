@@ -27,10 +27,10 @@ export default function App() {
         {/* Hero Section */}
         <Hero />
 
-        {/* Section: Soluções da Agência TikTok */}
+        {/* Section: Soluções da Agência Google & TikTok */}
         <AgencyServicesSection />
 
-        {/* Section: Escolha seu ativo (Contas & Business Centers) */}
+        {/* Section: Contas & Ativos (Google Ads & TikTok Ads) */}
         <AssetsSection />
 
         {/* Section: PostFlash (3 Planos de Automação de Postagens TikTok & Instagram) */}

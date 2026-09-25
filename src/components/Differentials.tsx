@@ -13,7 +13,7 @@ export const Differentials: React.FC = () => {
     {
       icon: <Lock className="w-6 h-6 text-cyan-400" />,
       title: "🛡️ Contingência Anti-Bloqueio",
-      description: "Ativos testados, restabelecidos e preparados para suportar escala de tráfego.",
+      description: "Contas Google Ads aquecidas com Trust Score e TikTok Ads restabelecidas preparadas para escala.",
       gradient: "from-cyan-500/10 to-transparent",
       border: "hover:border-cyan-500/30"
     },
@@ -46,7 +46,7 @@ export const Differentials: React.FC = () => {
             Diferenciais VantaX
           </h2>
           <p className="text-slate-400 text-base">
-            Compromisso inegociável com agilidade, estabilidade e escala contínua no ecossistema TikTok.
+            Compromisso inegociável com agilidade, estabilidade e escala contínua nos ecossistemas Google e TikTok.
           </p>
         </div>
 

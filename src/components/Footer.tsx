@@ -2,6 +2,7 @@ import React from 'react';
 import { MessageSquare, ArrowUpRight } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
 import { TikTokIcon } from './TikTokLogo';
+import { GoogleAdsIcon } from './GoogleLogo';
 
 interface FooterProps {
   onOpenLegal: (type: 'terms' | 'privacy') => void;
@@ -15,9 +16,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/[0.06]">
-          {/* Brand Info with VantaX Image */}
+          {/* Brand Info with VantaX Image & Google + TikTok Badges */}
           <div className="flex items-center gap-3">
-            <div className="relative w-9 h-9 rounded-xl overflow-hidden border border-cyan-500/30 shadow-[0_0_12px_rgba(6,182,212,0.2)]">
+            <div className="relative w-9 h-9 rounded-xl overflow-hidden border border-blue-500/30 shadow-[0_0_12px_rgba(66,133,244,0.2)]">
               <img 
                 src={SITE_CONFIG.logoUrl} 
                 alt="VantaX"
@@ -30,13 +31,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
                 <span className="text-white font-black tracking-wider text-base uppercase">
                   {SITE_CONFIG.brandName}
                 </span>
+                <span className="inline-flex items-center gap-1 text-[10px] text-blue-300 bg-blue-500/10 px-1.5 py-0.5 rounded border border-blue-500/20">
+                  <GoogleAdsIcon className="w-2.5 h-2.5" glow={false} />
+                  Google Ads
+                </span>
                 <span className="inline-flex items-center gap-1 text-[10px] text-cyan-400 bg-cyan-500/10 px-1.5 py-0.5 rounded border border-cyan-500/20">
                   <TikTokIcon className="w-2.5 h-2.5" glow={false} />
-                  Agência TikTok
+                  TikTok Ads
                 </span>
               </div>
-              <span className="text-xs text-slate-400 block">
-                Agência especializada em TikTok Ads, ativos, contingência e automação PostFlash
+              <span className="text-xs text-slate-400 block mt-0.5">
+                Agência especializada em Google Ads e TikTok Ads: Contas aquecidas, contingência e automação PostFlash
               </span>
             </div>
           </div>
@@ -54,7 +59,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
               href="#ativos"
               className="hover:text-white transition-colors"
             >
-              Ativos
+              Contas & Ativos
             </a>
 
             <a
@@ -97,7 +102,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
         {/* Bottom copyright line */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>
-            © {currentYear} {SITE_CONFIG.brandName} — Agência TikTok. Todos os direitos reservados.
+            © {currentYear} {SITE_CONFIG.brandName} — Agência Google & TikTok Ads. Todos os direitos reservados.
           </p>
           <p className="text-slate-400">
             Link oficial do Discord: {SITE_CONFIG.discordUrl}
@@ -108,3 +113,4 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
     </footer>
   );
 };
+

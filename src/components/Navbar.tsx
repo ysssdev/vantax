@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MessageSquare, Menu, X, ArrowUpRight } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
 import { TikTokIcon } from './TikTokLogo';
+import { GoogleAdsIcon } from './GoogleLogo';
 
 interface NavbarProps {
   onOpenLegal?: (type: 'terms' | 'privacy') => void;
@@ -22,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
   const navLinks = [
     { label: 'Início', href: '#inicio' },
     { label: 'Soluções da Agência', href: '#servicos' },
-    { label: 'Ativos & Contingência', href: '#ativos' },
+    { label: 'Contas & Ativos', href: '#ativos' },
     { label: 'PostFlash', href: '#postflash' },
     { label: 'Como Funciona', href: '#como-funciona' },
     { label: 'Diferenciais', href: '#diferenciais' },
@@ -38,7 +39,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Brand Logo with VantaX Image & Glow */}
+        {/* Brand Logo with VantaX Image & Google + TikTok Badges */}
         <a
           href="#inicio"
           id="nav-logo"
@@ -51,21 +52,27 @@ export const Navbar: React.FC<NavbarProps> = () => {
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-transparent to-purple-500/10 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-transparent to-blue-500/10 pointer-events-none" />
           </div>
 
           <div className="flex flex-col">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2">
               <span className="text-lg font-black tracking-wider text-white group-hover:text-cyan-300 transition-colors uppercase">
                 {SITE_CONFIG.brandName}
               </span>
-              <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/25 text-[10px] font-bold text-cyan-400 tracking-wider uppercase">
-                <TikTokIcon className="w-2.5 h-2.5" glow={false} />
-                <span>Agência TikTok</span>
-              </span>
+              <div className="flex items-center gap-1">
+                <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-blue-500/15 border border-blue-500/30 text-[10px] font-bold text-blue-300 tracking-wider">
+                  <GoogleAdsIcon className="w-2.5 h-2.5" glow={false} />
+                  <span>Google</span>
+                </span>
+                <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-cyan-500/15 border border-cyan-500/30 text-[10px] font-bold text-cyan-300 tracking-wider">
+                  <TikTokIcon className="w-2.5 h-2.5" glow={false} />
+                  <span>TikTok</span>
+                </span>
+              </div>
             </div>
             <span className="text-[11px] text-slate-400 tracking-wide font-medium flex items-center gap-1">
-              <span>Escala, Ativos & PostFlash</span>
+              <span>Agência de Performance & Contas</span>
             </span>
           </div>
         </a>
@@ -90,7 +97,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
             href={SITE_CONFIG.discordUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-cyan-500/20 via-blue-600/30 to-purple-600/20 hover:from-cyan-500/35 hover:via-blue-600/45 hover:to-purple-600/35 border border-cyan-500/40 hover:border-cyan-400/90 transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.18)] hover:shadow-[0_0_28px_rgba(6,182,212,0.35)]"
+            className="group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-blue-600/30 via-cyan-500/25 to-purple-600/25 hover:from-blue-600/45 hover:via-cyan-500/40 hover:to-purple-600/40 border border-blue-500/40 hover:border-cyan-400/90 transition-all duration-300 shadow-[0_0_20px_rgba(66,133,244,0.2)] hover:shadow-[0_0_28px_rgba(6,182,212,0.35)]"
           >
             <MessageSquare className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform duration-200" />
             <span>Falar com a Agência</span>

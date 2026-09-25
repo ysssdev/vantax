@@ -1,29 +1,31 @@
 import React from 'react';
 import { MousePointerClick, MessageSquare, CheckCircle } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
+import { GoogleAdsIcon } from './GoogleLogo';
+import { TikTokIcon } from './TikTokLogo';
 
 export const HowItWorks: React.FC = () => {
   const steps = [
     {
       number: "01",
-      title: "Defina sua Necessidade",
-      description: "Escolha entre nossa infraestrutura de ativos (Contas e BCs), automação PostFlash (TikTok & Insta) ou assessoria de escala.",
-      icon: <MousePointerClick className="w-6 h-6 text-cyan-400" />,
-      accent: "from-cyan-500/20 to-blue-500/20",
-      border: "border-cyan-500/30"
+      title: "Escolha Contas Google ou TikTok",
+      description: "Selecione entre contas Google Ads (aquecidas, aged, verificadas), ativos TikTok Ads (restabelecidas e BCs) ou automação PostFlash.",
+      icon: <MousePointerClick className="w-6 h-6 text-blue-400" />,
+      accent: "from-blue-500/20 to-cyan-500/20",
+      border: "border-blue-500/30"
     },
     {
       number: "02",
-      title: "Fale com a Agência no Discord",
-      description: "Clique no botão e seja direcionado instantaneamente para nosso servidor oficial no Discord com atendimento direto da equipe.",
+      title: "Atendimento no Discord",
+      description: "Clique no botão de compra e abra um ticket rápido no nosso servidor oficial do Discord para negociação e liberação segura.",
       icon: <MessageSquare className="w-6 h-6 text-purple-400" />,
       accent: "from-purple-500/20 to-cyan-500/20",
       border: "border-purple-500/30"
     },
     {
       number: "03",
-      title: "Ativação & Escala Imediata",
-      description: "Receba seus acessos, instruções de contingência e liberação imediata para rodar campanhas com máxima segurança.",
+      title: "Liberação & Escala Imediata",
+      description: "Receba seus acessos com instruções de aquecimento e contingência para rodar suas campanhas no Google e TikTok sem travas.",
       icon: <CheckCircle className="w-6 h-6 text-emerald-400" />,
       accent: "from-emerald-500/20 to-teal-500/20",
       border: "border-emerald-500/30"
@@ -36,14 +38,18 @@ export const HowItWorks: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider mb-4">
-            Fluxo da Agência
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-blue-500/30 text-slate-200 text-xs font-semibold uppercase tracking-wider mb-4 shadow-[0_0_15px_rgba(66,133,244,0.15)]">
+            <div className="flex items-center gap-1.5">
+              <GoogleAdsIcon className="w-3.5 h-3.5" />
+              <TikTokIcon className="w-3 h-3" />
+            </div>
+            <span>Fluxo da Agência</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Como Funciona o Atendimento
+            Como Funciona a Compra
           </h2>
           <p className="text-slate-400 text-base">
-            Processo ágil, discreto e desburocratizado em 3 etapas simples pelo Discord.
+            Processo ágil, seguro e transparente em 3 etapas simples pelo Discord.
           </p>
         </div>
 

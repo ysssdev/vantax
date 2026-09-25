@@ -1,13 +1,13 @@
 /**
- * Central configuration file for the TikTok Agency Landing Page.
+ * Central configuration file for the Google & TikTok Agency Landing Page.
  * Modify this file to easily update Discord links, brand info, and settings.
  */
 
 export const SITE_CONFIG = {
   brandName: "VantaX",
-  agencySubtitle: "Agência TikTok de Alta Performance",
-  badge: "Agência Especializada em TikTok Ads & Escala",
-  tagline: "Escala Máxima, Contingência & Automação no TikTok",
+  agencySubtitle: "Agência Google & TikTok Ads de Alta Performance",
+  badge: "Agência Especializada em Google Ads & TikTok Ads",
+  tagline: "Escala Máxima, Contas Verificadas & Contingência Google & TikTok",
   
   // Link central do Discord da empresa (utilizado por todos os botões da página)
   discordUrl: "https://discord.gg/8bypT48C",
